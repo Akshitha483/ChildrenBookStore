@@ -1,0 +1,129 @@
+﻿
+@{
+    ViewData["Title"] = "Default";
+}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <link rel="stylesheet" href="~/css/home.css">
+    
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#menu">Authors</a></li>
+            <li><a href="#experts">Categories</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" style="background: url(/images/bgpic.jpg)no-repeat  center center/cover">
+        <div class="main">
+            <h1 class="headings" style="color:white;"><b>"Books are a uniquely portable magic"</b></h1>
+            <button class="btn" style="background-color:palevioletred;"><a class="nav" asp-area="" asp-controller="books" asp-action="catalogue"> Read more</a></button>
+        </div>
+    </section>
+
+
+    <section id="about">
+
+        <h1 class="headings">ABOUT US</h1>
+        <div id="pic">
+            <img src="~/images/about1.jpg" alt="">
+            <div id="intro">
+                <h2>BOOK STORE</h2>
+                <p>
+                    We believe that bookstores are essential to a healthy culture. They’re where authors can connect with readers, 
+                    where we discover new writers, where children get hooked on the thrill of reading that can last a lifetime. 
+                    They’re also anchors for our downtowns and communities.As more and more people buy their books online, 
+                    we wanted to create an easy, convenient way for you to get your books and support bookstores at the same time.
+                </p>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section id="menu">
+        <h1 class="headings">AUTHORS</h1>
+        <div class="gallery">
+            <img src="~/images/author.jpg" alt="">
+            <img src="~/images/jk.jpg" alt="">
+            <img src="~/images/auth2.jpg" alt="">
+            <img src="~/images/author1.jpg" alt="">
+
+        </div>
+    </section>
+
+    <section id="experts">
+        <h1 class="headings">CATEGORIES</h1>
+        <div class="row">
+            <div class="box">
+                <a class="nav" asp-area="" asp-controller="books" asp-action="catalogue">
+                    <img src="~/images/art.jpg" alt="">
+                </a>
+                    <h1 class="headings">Activity Books</h1>
+                    <p>
+                        Art and craft activities give kids a sense of achievement and build confidence in them.
+                    </p>
+            </div>
+            <div class="box">
+                <a class="nav" asp-area="" asp-controller="books" asp-action="catalogue">
+                    <img src="~/images/champak.jpg" alt="">
+                    </a>
+                    <h1 class="headings">Story Books</h1>
+                    <p>
+                        Stories play a vital role in the growth and development of children.
+                    </p>
+
+            </div>
+            <div class="box">
+                <a class="nav" asp-area="" asp-controller="books" asp-action="catalogue">
+                    <img src="~/images/science.jpg" alt="">
+                    </a>
+                    <h1 class="headings">Subject Books</h1>
+                    <p>
+                        Science is a system of observations and experiments used to gain knowledge about how the universe works.  
+                    </p>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="headings">CONTACT US</h1>
+        <form action="" class="form">
+            <input type="email" name="email" class="input" placeholder="Enter Your Email">
+            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
+            <input type="submit" value="SEND" id="send">
+        </form>
+        <!-- Footer -->
+        <footer class="page-footer font-small blue fixed-bottom">
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3" style="background-color:coral">
+                <b> © 2021 Copyright:</b>
+                <a href="https://bookstore.com/"> BookStore.com</a>
+            </div>
+            <!-- Copyright -->
+
+        </footer>
+        <!-- Footer -->
+
+    </section>
+</body>
+
+</html>

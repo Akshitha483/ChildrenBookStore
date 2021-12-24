@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    
+        <link rel="stylesheet" href="~/css/customer.css" />
+    
+</head>
+<body>
+
+
+    <ul class="navbar">
+        <li>
+            <a asp-area="" asp-controller="Books" asp-action="Default"> Home</a>
+        </li>
+        <li>
+            <a asp-area="" asp-controller="Books" asp-action="catalogue"> Catalogue</a>
+        </li>
+        <li>
+            <a asp-area="" asp-controller="orders" asp-action="myorders">My Orders</a>
+        </li>
+
+    </ul>
+    <div>
+        @RenderBody()
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small blue fixed-bottom" >
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3" style="background-color:coral">
+           <b> © 2021 Copyright:</b>
+            <a href="https://bookstore.com/"> BookStore.com</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+</body>
+</html>
